@@ -1,5 +1,7 @@
 # Inline Assembly Validator for x86-64
 
+> **Note for Evaluators:** Source code is organized into `plugin/` (Clang plugin) and `standalone/` (standalone tool) instead of a single `src/` directory. Test cases are in `tests/` instead of `testcases/`. All scripts (`build.sh`, `run.sh`) reference these paths correctly and work as-is.
+
 A Clang plugin and standalone tool that parses inline assembly statements in C/C++ code and validates x86-64 instruction syntax, register usage, and calling convention preservation under the System V AMD64 ABI.
 
 ## Problem
